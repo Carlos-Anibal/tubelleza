@@ -1,0 +1,66 @@
+// Paleta de color:
+
+$color1:#514077;
+$color2:#924992;
+$color3:#FFAD01;
+$black: #111;
+$white:#fff;
+
+// Fuentes:
+    @import url('https://fonts.googleapis.com/css?family=Lato|Oswald:300,400');
+
+    // Oswald para titulos
+    $font-title:'Oswald', sans-serif;
+
+    // Lato para textos
+    $font-text:'Lato', sans-serif;
+
+    // Ancho de la fuente 
+    $light:300;
+    $normal:400;
+
+
+// Layout
+$max-width: 1200px;
+
+
+// Off canvas
+$offcanvas-width:12em;
+
+// Mixins para media query
+
+@mixin desde($size){
+    @media screen and (min-width: $size){
+        @content;
+    }
+}
+
+// Breakpoints
+$small: 480px;
+$medium:768px;
+$large: 1025px;
+$x-large: 1480px;
+
+
+
+// Imports 
+    @import "components/base"; //donde se almacena los estilos relacionados a las etiquetas HTML (sin clases ni Id's )
+
+     @import "components/header";
+     @import "components/menu";
+     @import "components/banner";
+     @import "components/buttons";
+     @import "components/services";
+     @import "components/staff";
+     @import "components/modules";
+     @import "components/contact";
+     @import "components/footer";
+
+
+
+
+
+
+
+
+

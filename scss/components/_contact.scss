@@ -1,0 +1,55 @@
+@include desde($large){
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        &-data,
+        &-form-container{
+            width: 49%;
+        }
+                
+
+    }
+}
+
+
+// contenedor del mapa
+.contact-data{
+
+    .contact-address,
+    .contact-phone{
+        font-size: .85em;
+        color:$color2;
+        opacity: .8;
+
+        &:before{
+            margin-right: .5em;
+            // position: relative;
+            // top: 2px;
+            vertical-align: middle;
+        }
+    }
+    
+     
+}
+
+.contact-form-container{
+    input,textarea{
+        width: 100%;
+        line-height: 1.7;
+        border: 1px solid rgba($black,.25);
+        margin-bottom:.8em;
+    }
+    label{
+        font-size: .8em;
+        opacity: .7;
+        
+    }
+    [type="submit"]{
+        text-transform: uppercase;
+        line-height: 3;
+        width: auto;
+        cursor:pointer;
+    }
+    
+ 
+}

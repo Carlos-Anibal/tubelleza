@@ -1,0 +1,102 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        title Tu belleza y estilo en nuestras manos
+        meta(name="viewport", content="width=device-width, initial-scale=1.0", maximun-scale="1.0", minimun-scale="1.0")
+        meta(name="description" content="")
+        link(rel="icon", href="img/favicon.png")
+
+        <link href="https://file.myfontastic.com/cnCA2CwLBA4DN7vp44pt7h/icons.css" rel="stylesheet">
+        link(rel="stylesheet", href="css/styles.css")
+        script(src="https://code.jquery.com/jquery-3.2.0.min.js")
+        script(src="js/scripts.js")
+
+    body
+        
+        header.main-header
+            .l-container
+                a(href="")
+                    img.logo(src="img/logo.png", alt="")
+                #toggle-menu.icon-menu
+                nav.main-nav#main-nav
+                    ul.main-menu
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Inicio
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Staff
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Servicios
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Promociones 
+                        li.main-menu__item
+                            a.main-menu__link(href="#") Promociones
+        .banner
+            img.banner__img(src="img/banner.jpg", alt="")
+            .banner__copy
+                h1.banner__copy__title Tu belleza y estilo en nuestras manos
+                p.banner__copy__content Profesionales a tu Servicio
+                a(href="#").banner__copy__button.button.primary Conoce más
+
+        main
+            .services
+                .service
+                    h3.service__title Cabello
+                .service
+                    h3.service__title Manos y pies
+                .service
+                    h3.service__title Cuidado de la piel
+
+
+            .staff-container.l-container
+                h2.staff-title staff
+                .staff-member
+                    img(src="img/staff-1.jpg", alt="").staff-member__img 
+                    h3.staff-member__name Laura
+                    a(href="#").staff-member__button.button.third Pedir cita
+                .staff-member
+                    img(src="img/staff-1.jpg", alt="").staff-member__img 
+                    h3.staff-member__name Carmen
+                    a(href="#").staff-member__button.button.third  Pedir cita
+                .staff-member
+                    img(src="img/staff-1.jpg", alt="").staff-member__img 
+                    h3.staff-member__name Mario
+                    a(href="#").staff-member__button.button.third  Pedir cita
+                .staff-member
+                    img(src="img/staff-1.jpg", alt="").staff-member__img 
+                    h3.staff-member__name Sandra
+                    a(href="#").staff-member__button.button.third  Pedir cita
+
+
+            .contact.l-container
+                .contact-data
+                    h2.subtitle Visitanos
+                    .contact-map
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1M0lO063AY4JzzboaSX9rW9Bn9pc" width="100%" height="350"></iframe>
+                    .contact-address.icon-pos Calle ABC, 123, int 201 México DF
+                    .contact-phone.icon-phone 907-654-321
+                .contact-form-container 
+                    h2.subtitle O escribenos
+                    form(action="contact.php" method="post").contact-form
+                        label(for="name") Su nombre:
+                        input(type="text" name="name")#name
+                        label(for="email") Su correo:
+                        input(type="email" name="email")#email
+                        label(for="tel") Su télefono:
+                        input(type="text" name="phone")#tel
+                        label(for="message") Su mensaje
+                        textarea(name="message")#message
+
+                        input(type="submit" value="enviar").button.secundary
+
+        footer.main-footer
+            a(href="#").social-icon.icon-facebook
+            a(href="#").social-icon.icon-twitter
+            a(href="#").social-icon.icon-youtube
+
+
+
+        
+
+
+
